@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15356,15357,15358,15359,15360,15361,15362');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme Variables */
+:root {
+  --background: #F8F8F8;
+  --primary: #00cbff;
+  --secondary: #281F68;
+  --tertiary: #646464;
+  --platinum: #E5E5E5;
+  --ferngreen: #566E3E;
+  --munsell: #2E93AD;
+  --white: #FFFFFF;
+  --black: #1F1F1F;
+
+
+  --font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-thin: 100;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-heavy: 800;
+  --font-black: 900;
+
+  @screen md {
+    --text-base: 1 rem;
+  }
+  @screen lg {
+    --text-base: 1.125 rem;
+  }
+  @screen xl {
+    --text-base: 1.25 rem;
+  }
+  @screen 2xl {
+    --text-base: 1.5 rem;
+  }
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  p {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+}
+
+input[type= "number"] {
+  --webkit-appearance: none;
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
