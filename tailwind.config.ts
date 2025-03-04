@@ -42,9 +42,32 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        mixture: 'linear-gradient(0deg, #281F68 0%, #52489C 100%)',
+      },
+      backgroundImage: {
+        'gradient-mixture': 'linear-gradient(0deg, #281F68 0%, #52489C 100%)',
       },
       fontFamily: {
-        sans: ['var(--font-family-sans)']
+        sans: ['var(--font-helvetica)']
+      },
+      fontWeight: {
+        thin: "100",
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "900",
+      },
+      borderRadius: {
+        "4xl": "2.5rem",
+        "5xl": "3rem",
+        "6xl": "3.5rem",
+        "7xl": "4rem",
+      },
+      dropShadow: {
+        "default": "0px 0px 10px rgba(0, 0, 0, 0.1)", 
       }
     }
   },
