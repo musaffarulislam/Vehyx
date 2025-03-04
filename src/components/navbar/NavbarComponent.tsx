@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import LogoImage from '@/assets/VehyxLogoWhite.png';
+import Link from 'next/link';
 
 const NavbarComponent = () => {
   return (
@@ -20,9 +21,11 @@ const NavbarComponent = () => {
 
       {/* Buttons */}
       <div className="flex space-x-4 font-medium">
-        <button className="px-6 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition">
-          Dealer login
-        </button>
+        <Link href="/auth/login">
+          <button className="px-6 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition">
+            Dealer login
+          </button>
+        </Link>
         <button className="px-6 py-3 bg-primary text-black rounded-full hover:bg-munsell hover:text-white transition">
           Contact us
         </button>

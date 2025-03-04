@@ -46,7 +46,7 @@ const CarHistoryFormComponent = () => {
   return (
     <div className='w-full'>
       <div className='text-center py-4'>
-        <h1>A car's history affects its value.</h1>
+        <h1>A car&apos;s history affects its value.</h1>
         <h3 className='font-light text-base'>See the price differences for yourself</h3>
       </div>
       <div className='relative pt-16'>

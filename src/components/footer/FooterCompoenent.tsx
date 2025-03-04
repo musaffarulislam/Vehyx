@@ -38,7 +38,7 @@ const FooterComponent = () => {
               <li className="cursor-pointer hover:opacity-75 transition-all">About Vehyx</li>
               <li className="cursor-pointer hover:opacity-75 transition-all">Blog</li>
               <li className="cursor-pointer hover:opacity-75 transition-all">Press Room</li>
-              <li className="cursor-pointer hover:opacity-75 transition-all">Careers We're Hiring!</li>
+              <li className="cursor-pointer hover:opacity-75 transition-all">Careers We&apos;re Hiring!</li>
               <li className="cursor-pointer hover:opacity-75 transition-all">Help Center</li>
             </ul>
           </div>
