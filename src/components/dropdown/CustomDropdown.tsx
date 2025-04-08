@@ -57,13 +57,13 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "z-20 flex items-center justify-between px-4 py-4 bg-gray-100 rounded-full w-full border-tertiary !border-opacity-20",
+          "z-20 flex items-center justify-between p-3 md:p-4 bg-gray-100 rounded-full w-full border-tertiary !border-opacity-20",
           !isOpen && '!border',
           className
         )}
       >
         <div className="flex items-center gap-3">
-          <div className=" text-white p-4 rounded-full flex items-center justify-center w-16 h-16" style={{backgroundColor: color}}>
+          <div className=" text-white p-3 md:p-4 rounded-full flex items-center justify-center w-16 h-16" style={{backgroundColor: color}}>
             {icon || (
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 19V9M18 19V9M10 19V9M14 19V9M4 5L20 5M2 19H22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -75,7 +75,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
             {value || placeholder}
           </span>
         </div>
-        <ChevronDown className={cn("w-8 h-8 transition-transform", isOpen ? "transform rotate-180" : "")} />
+        <ChevronDown className={cn("w-6 md:w-8 h-6 md:h-8 transition-transform", isOpen ? "transform rotate-180" : "")} />
       </button>
 
       {/* Dropdown menu */}

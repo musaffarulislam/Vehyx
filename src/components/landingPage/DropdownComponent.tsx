@@ -18,18 +18,11 @@ const DropdownComponent = () => {
       "Weather damage",
       "Repair estimates and costs"
     ];
-  
-    // // Custom SVG icon
-    // const vehicleIcon = (
-    //     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //         <path d="M6 19V9M18 19V9M10 19V9M14 19V9M4 5L20 5M2 19H22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    //         <path d="M12 5V3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    //     </svg>
-    // );
+
   
     return (
       <div className="mx-36">
-        <div className="py-8 flex justify-center gap-12  w-full">
+        <div className="py-8 flex justify-center gap-8 md:gap-12  w-full">
             <CustomDropdown 
                 options={damageOptions}
                 value={selectedOptionVehicle}

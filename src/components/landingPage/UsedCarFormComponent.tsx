@@ -12,7 +12,7 @@ const UsedCarFormComponent = () => {
                   <h1>Used Cars for Sale Buy with confidence.</h1>
                   <h3 className='font-light text-base'>Everything you need to browse nearby cars, all in one place.</h3>
               </div>
-              <div className='my-4 w-3/5 drop-shadow-default  rounded-2xl bg-white p-12 py-16 flex flex-col gap-6'>
+              <div className='my-4 w-4/5 drop-shadow-default  rounded-2xl bg-white p-12 py-16 flex flex-col gap-6'>
                   <div className='flex gap-4 w-full'>
                     <div className="grid gap-2 w-full">
                       <Label htmlFor="zip-code" className="text-black">Enter your Zip Code*</Label>

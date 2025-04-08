@@ -1,5 +1,8 @@
 import LogoImage from '@/assets/VehyxLogoWhite.png';
 import Image from 'next/image';
+import InstagramIcon from '@/assets/InstagramIcon.png';
+import XIcon from '@/assets/XIcon.png';
+import LinkedInIcon from '@/assets/LinkedInIcon.png';
 
 const FooterComponent = () => {
     return (
@@ -59,9 +62,9 @@ const FooterComponent = () => {
               <li className="cursor-pointer hover:opacity-75 transition-all">Dealer Support</li>
             </ul>
             <div className="flex gap-4 mt-4">
-              <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" />
-              <img src="/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
-              <img src="/x.svg" alt="X (Twitter)" className="w-6 h-6" />
+              <Image src={InstagramIcon} alt="Instagram" width={20} height={20} className='rounded-md' />
+              <Image src={XIcon} alt="Twitter" width={20} height={20} className='rounded-md' />
+              <Image src={LinkedInIcon} alt="LinkedIn" width={20} height={20} className='rounded-md' />
             </div>
           </div>
         </div>
