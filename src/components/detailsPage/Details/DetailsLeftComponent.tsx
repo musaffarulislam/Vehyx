@@ -33,7 +33,7 @@ const DetailsLeftComponent = () => {
   }
 
   // Reusable spec row component
-  const SpecRow = ({ label, value, lineNeeded= true }: any) => (
+  const SpecRow = ({ label, value, lineNeeded= true }: { label: string, value: string, lineNeeded?: boolean }) => (
     <>
       <div className="w-full flex gap-4">
         <p className="w-3/4">{label}</p>

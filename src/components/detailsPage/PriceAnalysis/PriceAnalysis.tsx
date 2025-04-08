@@ -27,7 +27,7 @@ const PriceAnalysis = () => {
                         <p className='text-lg font-bold'>ABOVE</p>
                     </div>
                 </div>
-                <p className='max-w-screen-lg text-center'>This vehicle is $2,543 BELOW MARKET (7%). It is compared to similar vehicles in the St. John's and adjacent area. It’s based on kilometers, year, make, model, trim, manufacturer certification, manufacturer packages, options, and much more.</p>
+                <p className='max-w-screen-lg text-center'>This vehicle is $2,543 BELOW MARKET (7%). It is compared to similar vehicles in the St. John&apos;s and adjacent area. It&apos;s based on kilometers, year, make, model, trim, manufacturer certification, manufacturer packages, options, and much more.</p>
                 <h3 className='text-blue-700 underline font-bold'>How we calculate price badges?</h3>
             </div>
         </div>
