@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import RobotAndCar from '@/assets/RobotAndCar.png'
 import NavbarComponent from '@/components/navbar/NavbarComponent'
+import Link from 'next/link'
 
 const BannerComponent = () => {
   return (
@@ -24,9 +25,11 @@ const BannerComponent = () => {
                   placeholder="Enter your 17 character VIN"
                   className="p-4 md:p-6 pl-4 md:pl-6 pr-16 md:pr-20 w-full rounded-full text-black focus:outline-none"
                 />
+                <Link href="/lists" >
                 <button className="absolute right-2 top-1/2 transform -translate-y-1/2 px-6 md:px-8 py-4 bg-gradient-mixture text-white rounded-full hover:bg-munsell transition">
                   Go
                 </button>
+                </Link>
               </div>
               <a href="#" className=" text-white underline">View Sample Report</a>
             </div>

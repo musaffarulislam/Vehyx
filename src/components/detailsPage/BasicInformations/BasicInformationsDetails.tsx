@@ -1,11 +1,9 @@
 "use client"
 import Link from "next/link"
-
 import SpeedMeterIcon from "@/assets/SpeedMeterIcon.png"
 import LocationIcon from "@/assets/LocationIcon.png"
 import Image from "next/image"
 import HeartIcon from "@/assets/svg/HeartIcon"
-
 
 const BasicInformationsDetails = () => {
   return (

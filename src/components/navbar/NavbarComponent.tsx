@@ -8,7 +8,9 @@ const NavbarComponent = () => {
     <nav className="flex justify-between items-center">
       {/* Logo */}
       <div>
-        <Image src={LogoImage} alt="Vehyx Logo" width={120} height={40} />
+        <Link href={'/'}>
+          <Image src={LogoImage} alt="Vehyx Logo" width={120} height={40} />
+        </Link>
       </div>
 
       {/* Navigation Links */}

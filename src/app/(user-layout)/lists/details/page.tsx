@@ -2,6 +2,7 @@ import BasicInformations from '@/components/detailsPage/BasicInformations/BasicI
 import Details from '@/components/detailsPage/Details/Details'
 import ImageGridSection from '@/components/detailsPage/ImageGridSection'
 import PriceAnalysis from '@/components/detailsPage/PriceAnalysis/PriceAnalysis'
+import RecommendedCars from '@/components/detailsPage/PriceAnalysis/RecommendedCars'
 import FooterComponent from '@/components/footer/FooterCompoenent'
 import NavbarComponent from '@/components/navbar/NavbarComponent'
 import React from 'react'
@@ -20,6 +21,7 @@ const page = () => {
           <BasicInformations />
           <Details />
           <PriceAnalysis />
+          <RecommendedCars />
         </div>
       </div>
           <FooterComponent />
