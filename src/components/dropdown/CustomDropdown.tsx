@@ -52,12 +52,12 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
   };
 
   return (
-    <div className="relative z-10 w-full" ref={dropdownRef}>
+    <div className="relative w-full" ref={dropdownRef}>
       {/* Select trigger */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "z-20 flex items-center justify-between p-3 md:p-4 bg-gray-100 rounded-full w-full border-tertiary !border-opacity-20",
+          "flex relative z-30 items-center justify-between p-3 md:p-4 bg-gray-100 rounded-full w-full border-tertiary !border-opacity-20",
           !isOpen && '!border',
           className
         )}
@@ -80,7 +80,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute left-0 right-0 top-1/2 bg-white rounded-b-xl shadow-md -z-10 pt-12 py-4 ">
+        <div className="-mt-10 bg-white rounded-b-xl shadow-md pt-12 py-4 z-20 relative">
           {options.map((option, index) => (
             <div
               key={index}

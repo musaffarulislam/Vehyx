@@ -81,6 +81,7 @@ export function LoginForm({
                 <Label htmlFor="password" className="text-tertiary">Password</Label>
                 <Input 
                   id="password" 
+                  placeholder="password"
                   showPasswordToggle 
                   type="password" 
                   {...register("password")}

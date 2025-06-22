@@ -17,6 +17,8 @@ const config: Config = {
         platinum: 'var(--platinum)',
         ferngreen: 'var(--ferngreen)',
         munsell: 'var(--munsell)',
+        prinwkle: 'var(--prinwkle)',
+        marian: 'var(--marian)',
         white: 'var(--white)',
         black: 'var(--black)',
         card: {

@@ -60,7 +60,7 @@ const FAQComponent = () => {
                   <Smile className="w-5 h-5 text-gray-600" />
                 </div>
                 <div>
-                    <span className="font-medium">{faq.question}</span>
+                    <span className="font-medium font-bold">{faq.question}</span>
                 {openIndex === index && faq.answer && (
                     <p className="mt-2 text-gray-500">{faq.answer}</p>
                 )}
