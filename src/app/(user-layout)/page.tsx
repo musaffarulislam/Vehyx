@@ -7,7 +7,7 @@ import FAQComponent from "@/components/landingPage/FAQComponent";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-screen-2xl mx-auto">
       <BannerComponent />
       <DropdownComponent />
       <DetailsFormComponent />
