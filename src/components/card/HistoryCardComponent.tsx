@@ -1,7 +1,7 @@
 import HistoryCardIcon1 from "@/assets/svg/HistoryCardIcon1";
 import Image from "next/image";
 import { ReactNode } from "react";
-import CarImage from "@/assets/CarModel.png"
+import CarImage from "@/assets/CarModel.png";
 
 interface HistoryCardComponentProps {
   icon?: ReactNode;
@@ -19,7 +19,9 @@ const HistoryCardComponent: React.FC<HistoryCardComponentProps> = ({
   color = "bg-blue-100",
 }) => {
   return (
-    <div className={`p-6 ${color} rounded-2xl shadow-md text-center relative w-1/3`}>
+    <div
+      className={`p-6 ${color} rounded-2xl shadow-md text-center relative w-2/3 lg:w-1/3`}
+    >
       {/* Top Icon */}
       <div className="absolute p-6 -top-12 left-1/2 transform -translate-x-1/2 bg-white rounded-full drop-shadow-default flex items-center justify-center w-24 h-24">
         {icon}
@@ -32,7 +34,13 @@ const HistoryCardComponent: React.FC<HistoryCardComponentProps> = ({
 
         {/* Fixed Car Image */}
         <div className="my-4">
-          <Image src={CarImage} alt="Car" width={200} height={120} className="w-full scale-x-[-1]" />
+          <Image
+            src={CarImage}
+            alt="Car"
+            width={200}
+            height={120}
+            className="w-full scale-x-[-1]"
+          />
         </div>
 
         <p className="text-gray-500 text-sm">VEHYX History based value</p>

@@ -13,8 +13,8 @@ const BannerComponent = () => {
         <div className="mx-12">
           <NavbarComponent />
         </div>
-        <div className="w-full h-full flex justify-center">
-          <div className="w-full mx-12 flex max-xl:flex-col gap-4 justify-between">
+        <div className="w-full h-full flex justify-center py-8">
+          <div className="w-full mx-12 flex max-xl:flex-col gap-4 justify-center xl:justify-between">
             <div className="w-full flex flex-col justify-center text-white">
               <h1 className="text-4xl md:text-6xl font-semibold mb-6 whitespace-nowrap">
                 <span className="text-primary">India's #1</span> platform

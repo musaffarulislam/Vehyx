@@ -12,14 +12,14 @@ const testimonials = [
   {
     name: "Jane Doe",
     role: "CEO of TechWave Solutions",
-    image: "/assets/profile-image.png", 
+    image: "/assets/profile-image.png",
     feedback:
       "Working with Anish was an absolute game-changer for our business! The website redesign exceeded our expectations, with a sleek, user-friendly interface that truly resonates with our audience! The website redesign exceeded our expectations.",
   },
   {
     name: "Jane Doe",
     role: "CEO of TechWave Solutions",
-    image: "/assets/profile-image.png", 
+    image: "/assets/profile-image.png",
     feedback:
       "Working with Anish was an absolute game-changer for our business! The website redesign exceeded our expectations, with a sleek, user-friendly interface that truly resonates with our audience! The website redesign exceeded our expectations.",
   },
@@ -55,11 +55,11 @@ const ClientSatisfactionComponent = () => {
               {/* Client Info & Feedback */}
               <div className="flex justify-between items-center">
                 <div className="w-5/12">
-                    <p className="font-bold text-lg">{client.name}</p>
-                    <p className="text-gray-500">{client.role}</p>
+                  <p className="font-bold text-lg">{client.name}</p>
+                  <p className="text-gray-500">{client.role}</p>
                 </div>
                 <div className="w-7/12">
-                <p className="mt-3 text-gray-700">{client.feedback}</p>
+                  <p className="mt-3 text-gray-700">{client.feedback}</p>
                 </div>
               </div>
             </div>
