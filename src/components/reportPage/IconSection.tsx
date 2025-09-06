@@ -31,7 +31,7 @@ const IconSection = () => {
             src={RegisteredIcon}
             width={300}
             height={300}
-            className="w-20 object-contain"
+            className="w-16 object-contain"
             alt="Record Found Vhyex"
           />
         </div>
@@ -49,7 +49,7 @@ const IconSection = () => {
             src={DamageIcon}
             width={300}
             height={300}
-            className="w-20 object-contain"
+            className="w-16 object-contain"
             alt="Record Found Vhyex"
           />
         </div>
@@ -67,7 +67,7 @@ const IconSection = () => {
             src={DeclaredStolen}
             width={300}
             height={300}
-            className="w-20 object-contain"
+            className="w-16 object-contain"
             alt="Record Found Vhyex"
           />
         </div>
@@ -85,7 +85,7 @@ const IconSection = () => {
             src={RecallIcon}
             width={300}
             height={300}
-            className="w-20 object-contain"
+            className="w-16 object-contain"
             alt="Record Found Vhyex"
           />
         </div>
@@ -103,7 +103,7 @@ const IconSection = () => {
             src={RecordSFoundIcon}
             width={300}
             height={300}
-            className="w-20 object-contain"
+            className="w-16 object-contain"
             alt="Record Found Vhyex"
           />
         </div>

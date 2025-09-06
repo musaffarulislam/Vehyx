@@ -37,8 +37,8 @@ const CarFilterComponent = () => {
   // SVG for the chevron down icon
   const ChevronDown = ({ isExpanded }: any) => (
     <svg
-      width="24"
-      height="24"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -70,16 +70,16 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("location")}
           >
-            <h2 className="text-xl font-normal">Location</h2>
+            <h2 className="text-lg font-normal">Location</h2>
             <ChevronDown isExpanded={expandedSections.location} />
           </div>
           {expandedSections.location && (
             <div className="flex gap-2 items-center py-2">
               <div className="relative w-1/2">
-                <select className="appearance-none border rounded-md p-2 w-full bg-white text-sm">
+                <select className="appearance-none border rounded-md p-2 w-full bg-white text-xs">
                   <option>Radius</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
@@ -87,10 +87,10 @@ const CarFilterComponent = () => {
                 Miles of
               </span>
               <div className="relative w-1/2">
-                <select className="appearance-none border rounded-md p-2 w-full bg-white text-sm">
+                <select className="appearance-none border rounded-md p-2 w-full bg-white text-xs">
                   <option>Pincode</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
@@ -104,7 +104,7 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("makeModel")}
           >
-            <h2 className="text-xl font-normal">Make & Model</h2>
+            <h2 className="text-lg font-normal">Make & Model</h2>
             <ChevronDown isExpanded={expandedSections.makeModel} />
           </div>
           {expandedSections.makeModel && (
@@ -113,7 +113,7 @@ const CarFilterComponent = () => {
                 <select className="appearance-none border rounded-md py-3 px-4 w-full bg-white">
                   <option>Acura</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
@@ -121,7 +121,7 @@ const CarFilterComponent = () => {
                 <select className="appearance-none border rounded-md py-3 px-4 w-full bg-white">
                   <option>All Models</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
@@ -135,25 +135,25 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("year")}
           >
-            <h2 className="text-xl font-normal">Year</h2>
+            <h2 className="text-lg font-normal">Year</h2>
             <ChevronDown isExpanded={expandedSections.year} />
           </div>
           {expandedSections.year && (
             <div className="flex gap-2 items-center py-2">
               <div className="relative w-1/2">
-                <select className="appearance-none border rounded-md p-2 w-full bg-white text-sm">
+                <select className="appearance-none border rounded-md p-2 w-full bg-white text-xs">
                   <option>1999</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
               <span className="text-gray-400">to</span>
               <div className="relative w-1/2">
-                <select className="appearance-none border rounded-md p-2 w-full bg-white text-sm">
+                <select className="appearance-none border rounded-md p-2 w-full bg-white text-xs">
                   <option>2025</option>
                 </select>
-                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <div className="absolute right-1 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <ChevronDown />
                 </div>
               </div>
@@ -167,7 +167,7 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("price")}
           >
-            <h2 className="text-xl font-normal">Price</h2>
+            <h2 className="text-lg font-normal">Price</h2>
             <ChevronDown isExpanded={expandedSections.price} />
           </div>
           {expandedSections.price && (
@@ -199,7 +199,7 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("mileage")}
           >
-            <h2 className="text-xl font-normal">Mileage</h2>
+            <h2 className="text-lg font-normal">Mileage</h2>
             <ChevronDown isExpanded={expandedSections.mileage} />
           </div>
           {expandedSections.mileage && (
@@ -231,7 +231,7 @@ const CarFilterComponent = () => {
             className="flex justify-between items-center py-4 cursor-pointer"
             onClick={() => toggleSection("bodyStyle")}
           >
-            <h2 className="text-xl font-normal">Body style</h2>
+            <h2 className="text-lg font-normal">Body style</h2>
             <ChevronDown isExpanded={expandedSections.bodyStyle} />
           </div>
           {expandedSections.bodyStyle && (
@@ -265,7 +265,7 @@ const CarFilterComponent = () => {
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleSection(option.id)}
             >
-              <h2 className="text-xl font-normal">{option.name}</h2>
+              <h2 className="text-lg font-normal">{option.name}</h2>
               <ChevronDown isExpanded={expandedSections[option.id]} />
             </div>
             {expandedSections[option.id] && (
